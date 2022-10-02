@@ -1,0 +1,32 @@
+.overlay-box {
+    z-index: 10;
+    top: 70px;
+    width: 40%;
+    position: fixed;
+    margin-left: 40px;
+}
+.footer{
+    z-index: 10;
+    position: relative;
+    bottom: 0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media (max-width:420px){
+    html {
+        font-size: 15px;
+    }
+    .overlay-box {
+        top: 10px;
+        width: 75%;
+        margin-bottom: 30px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        position: relative;
+        
+    }
+  }

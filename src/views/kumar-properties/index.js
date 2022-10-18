@@ -81,7 +81,7 @@ const KumarProperties = () => {
             Mobile : +91 7887578111 
         </Typography>
         <Typography align="center">
-            Email : shubh.barao111@gmail.com 
+            Email : spacebhk14@gmail.com 
         </Typography> 
         </div>
     </div>

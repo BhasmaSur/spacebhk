@@ -1,4 +1,4 @@
-.overlay-box {
+.overlay-box2 {
     z-index: 10;
     top: 70px;
     width: 40%;
@@ -19,7 +19,7 @@
     html {
         font-size: 15px;
     }
-    .overlay-box {
+    .overlay-box2 {
         top: 10px;
         width: 75%;
         margin-bottom: 30px;

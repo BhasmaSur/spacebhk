@@ -44,7 +44,7 @@ const KumarProperties = () => {
           height={"100%"}
         />
       </div>
-      <div className="overlay-box">
+      <div className="overlay-box2">
         <Typography variant="subtitle2">
           *Your information will be safe with us, we dont share it with anyone.
         </Typography>

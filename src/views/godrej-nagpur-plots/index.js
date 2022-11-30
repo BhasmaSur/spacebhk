@@ -15,6 +15,11 @@ const GodrejNagpurPlots = () => {
   const [mobile, setMobile] = useState("");
   const [email, setEmail] = useState("");
 
+  const clearData = () =>{
+    setName("")
+    setMobile("")
+    setEmail("")
+  }
   const verifyUser = () => {
     if (name && (mobile || email)) {
       fetch(
@@ -32,7 +37,9 @@ const GodrejNagpurPlots = () => {
           }),
         }
       );
+      clearData()
       alert("Your enquiry sent successfully, thanks");
+      
     } else {
       if (!name) {
         alert("Enter Name");
@@ -42,6 +49,7 @@ const GodrejNagpurPlots = () => {
       }
     }
   };
+
   return (
     <div>
       <div>
@@ -91,6 +99,7 @@ const GodrejNagpurPlots = () => {
               Register here and avail the Best Offers!!
             </Typography>
             <TextField
+              value={name}
               sx={{ marginTop: 2 }}
               fullWidth
               id="standard-password-input"
@@ -100,6 +109,7 @@ const GodrejNagpurPlots = () => {
               onChange={(event) => setName(event.target.value)}
             />
             <TextField
+              value={mobile}
               sx={{ marginTop: 2 }}
               fullWidth
               id="standard-password-input"
@@ -109,6 +119,7 @@ const GodrejNagpurPlots = () => {
               onChange={(event) => setMobile(event.target.value)}
             />
             <TextField
+              value={email}
               sx={{ marginTop: 2 }}
               fullWidth
               id="standard-password-input"

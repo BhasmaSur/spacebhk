@@ -4,12 +4,13 @@ import LandingPage from './views/landing-page';
 import KumarProperties from './views/kumar-properties';
 import ErrorPage from './views/error-page';
 import GodrejNagpurPlots from './views/godrej-nagpur-plots';
+import PrivacyPolicy from './views/privacy-policy';
 function App() {
   return (
     <Router>
     <Routes>
       <Route path='/kumar-properties' element={<KumarProperties />} exact/>
-      <Route path='/godrej-nagpur-plots' element={<GodrejNagpurPlots />} exact/>
+      <Route path='/privacy-policy' element={<PrivacyPolicy />} exact/>
       <Route path='/' element={<LandingPage />} exact/>
       <Route path='/*' element={<ErrorPage />} exact/>
     </Routes>
